@@ -56,4 +56,4 @@ class MainMenuPrompt(AbstractPrompt):
                 continue
 
         self.scanner.close()
-
+        
