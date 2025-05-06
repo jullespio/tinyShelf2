@@ -1,4 +1,5 @@
 from .abstract_prompt import AbstractPrompt
+from .crud_prompts import NewBookPrompt
 
 class MainMenuPrompt(AbstractPrompt):
 

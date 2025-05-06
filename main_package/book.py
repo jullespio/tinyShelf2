@@ -15,7 +15,7 @@ class Book:
         self.date_created = datetime.now()
         self.date_modified = datetime.now()
 
-    # The metghod below updates an object's attributes using keyword arguments, only if those 
+    # The method below updates an object's attributes using keyword arguments, only if those 
     # attributes already exist, and then sets a date_modified attribute to the current time.
 
     def update(self, **kwargs):
