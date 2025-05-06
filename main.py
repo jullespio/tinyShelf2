@@ -11,8 +11,8 @@ the rest of the work.
 import main_package
 
 def run():
-    solved = main_package.main_module_function()
-    return solved
+    prompt = main_package.main_module_function()
+    return prompt
 
 # Run the function if this is the main file executed
 if __name__ == "__main__":
