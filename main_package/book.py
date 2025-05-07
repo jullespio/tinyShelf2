@@ -1,7 +1,7 @@
 from datetime import datetime
 
 class Book:
-    def __init__(self, title, author, publisher=None, year=None, isbn=None,
+    def __init__(self, title, author, publisher, year, isbn=None,
                  rating=None, other_info=None, read=False, lent=False):
         self.title = title
         self.author = author
