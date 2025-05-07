@@ -3,7 +3,7 @@ from datetime import datetime  # Used to track creation and modification times
 class Book:
     def __init__(self, title, author, publisher, year, isbn=None,
                  rating=None, other_info=None, read=False, lent=False,
-                 date_created=None, date_modified=None):
+                 ):
 
         # Ensure title, author, and publisher are non-empty strings
         for field_name, field_value in [("title", title), ("author", author), ("publisher", publisher)]:
@@ -33,8 +33,8 @@ class Book:
         self.other_info = other_info
         self.read = read
         self.lent = lent
-        self.date_created = date_created or datetime.now()  # Set creation time
-        self.date_modified = date_modified or datetime.now()  # Set modification time
+        self.date_created = datetime.now()  # Set creation time
+        self.date_modified = datetime.now()  # Set modification time
 
     def update(self, **kwargs):
         # Update existing attributes with provided values

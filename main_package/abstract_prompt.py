@@ -17,19 +17,19 @@ class AbstractPrompt:
     def display_info_padding_bottom(info_to_display):
         print(f"{info_to_display}\n")
 
-    def continue_or_not(self):
+    def get_input(self, prompt, default=None):
+        value = input(prompt)
+        return value if value else default
+
+    def get_boolean_input(self, prompt, default=False):
         while True:
-            print("\nContinue? [y/n]")
-            answer = input("> ")
-            print()
-            
-            if answer.lower() == "y":
+            value = input(prompt + " (y/n): ").strip().lower()
+            if value in ['y', 'yes']:
                 return True
-            
-            if answer.lower() == "n":
+            elif value in ['n', 'no']:
                 return False
-            
-            print("\nPlease provide a valid answer.\n")
+            else:
+                print("Invalid input, please enter 'y' or 'n'.")
     
     def current_prompt(self):
         raise NotImplementedError("Subclasses should implement this method.")
