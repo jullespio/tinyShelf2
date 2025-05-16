@@ -1,0 +1,4 @@
+numpy==1.24.1
+random==3.11.1
+
+platformdirs>=3.0.0

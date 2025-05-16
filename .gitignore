@@ -1,0 +1,3 @@
+main_package/__pycache__/
+tests/__pycache__/
+main_package/subpackage/__pycache__/
