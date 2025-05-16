@@ -4,7 +4,7 @@ the rest of the work.
 """
 
 # Import the main package
-import main_package
+from tinyshelf2 import main_package
 
 def run():
     prompt = main_package.main_module_function()
