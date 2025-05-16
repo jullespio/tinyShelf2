@@ -11,8 +11,8 @@ setup(
     version="2.1.0",
     description="A lightweight command-line library manager",
     author="Julles",
-    packages=find_packages(where="tinyshelf2"),
-    package_dir={"": "tinyshelf2"},
+    packages=find_packages(where="."),
+    package_dir={"": "."},
     install_requires=load_requirements(),
     entry_points={
         "console_scripts": [
