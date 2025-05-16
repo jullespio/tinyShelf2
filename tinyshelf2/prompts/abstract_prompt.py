@@ -1,7 +1,7 @@
 # abstract_prompt.py
 
 from abc import ABC, abstractmethod  # NEW: Enables formal abstraction
-from .utils import PromptCancelled
+from ..utils.module import PromptCancelled
 
 class AbstractPrompt(ABC):
     """
