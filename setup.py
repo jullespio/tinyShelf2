@@ -10,7 +10,7 @@ setup(
     name="tinyshelf2",
     version="2.1.0",
     description="A lightweight command-line library manager",
-    author="Julles",
+    author="Julles Pio",
     packages=find_packages(where="."),
     package_dir={"": "."},
     install_requires=load_requirements(),
