@@ -1,4 +1,4 @@
-from .abstract_prompt import AbstractPrompt
+from tinyshelf2.prompts.abstract_prompt import AbstractPrompt
 from .book import Book
 from .library_manager import Library, get_library_filepath, add_book_and_save
 from  .utils import *

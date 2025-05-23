@@ -1,6 +1,6 @@
-from .abstract_prompt import AbstractPrompt
-from .crud_prompts import NewBookPrompt, SearchPrompt, UpdatePrompt
-from .utils import *
+from tinyshelf2.prompts.abstract_prompt import AbstractPrompt
+from tinyshelf2.prompts.crud_prompts import NewBookPrompt, SearchPrompt, UpdatePrompt
+from tinyshelf2.utils.utils import *
 
 # Optional future imports (placeholders)
 # from .search_prompt import SearchPrompt

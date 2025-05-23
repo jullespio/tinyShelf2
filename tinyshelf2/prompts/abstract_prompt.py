@@ -1,7 +1,7 @@
 # abstract_prompt.py
 
 from abc import ABC, abstractmethod  # NEW: Enables formal abstraction
-from ..utils.module import PromptCancelled
+from tinyshelf2.main_app import PromptCancelled
 
 class AbstractPrompt(ABC):
     """
